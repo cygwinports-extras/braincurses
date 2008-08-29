@@ -1,0 +1,58 @@
+braincurses
+------------------------------------------
+BrainCurses is a clone of the Mastermind game implemented in ncurses.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libncurses8-5.5-3
+
+Build requirements:
+(besides corresponding devel packages)
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical homepage:
+  http://sourceforge.net/projects/braincurses/
+
+Canonical download:
+  http://downloads.sourceforge.net/braincurses
+
+------------------------------------
+
+Build instructions:
+  unpack braincurses-0.5b-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./braincurses-0.5b-1.cygport all
+
+This will create:
+  /usr/src/braincurses-0.5b-1-src.tar.bz2
+  /usr/src/braincurses-0.5b-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distro:
+
+  /usr/bin/braincurses.exe
+  /usr/share/doc/braincurses-0.5b/COPYING
+  /usr/share/doc/braincurses-0.5b/ChangeLog
+  /usr/share/doc/braincurses-0.5b/INSTALL
+  /usr/share/doc/braincurses-0.5b/README
+  /usr/share/doc/braincurses-0.5b/THANKS
+
+------------------
+
+Port Notes:
+
+----- version 0.5b-1 -----
+Version bump.
+
+----- version 0.5a-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

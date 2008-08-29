@@ -1,0 +1,5 @@
+category: Games
+requires: cygwin libncurses8
+sdesc: "Mastermind game for console"
+ldesc: "BrainCurses is a clone of the Mastermind game implemented in 
+ncurses."

@@ -1,0 +1,16 @@
+DESCRIPTION="Console Mastermind game"
+HOMEPAGE="http://sourceforge.net/projects/braincurses/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+CXXFLAGS+=" -I/usr/include/ncurses"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	verbose g++ ${CXXFLAGS} -o ${PN}.exe braincurses.cpp curses/windows.cpp -lncurses || error "compile failed"
+}
+
+src_install() {
+	cd ${B}
+	dobin ${PN}.exe
+}
